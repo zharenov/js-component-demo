@@ -5,6 +5,7 @@ import com.haulmont.cuba.gui.components.AbstractWindow;
 import com.haulmont.cuba.gui.components.TextField;
 
 import javax.inject.Inject;
+import java.util.Map;
 
 public class DemoScreen extends AbstractWindow {
 
@@ -14,6 +15,10 @@ public class DemoScreen extends AbstractWindow {
     @Inject
     protected TextField messageText;
 
+    @Override
+    public void init(Map<String, Object> params) {
+        messageText.setValue("Hello, world!");
+    }
 
     public void onShowMessageClick() {
         jsComponent.alert(messageText.getValue());
