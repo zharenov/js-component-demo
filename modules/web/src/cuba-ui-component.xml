@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<components xmlns="http://schemas.haulmont.com/cuba/components.xsd">
+    <component>
+        <name>jsComponent</name>
+        <componentLoader>com.company.js.web.gui.xml.layout.loaders.JsComponentLoader</componentLoader>
+        <class>com.company.js.web.gui.components.WebJsComponent</class>
+    </component>
+</components>

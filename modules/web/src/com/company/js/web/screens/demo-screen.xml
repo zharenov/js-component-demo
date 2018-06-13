@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.js.web.screens.DemoScreen"
+        messagesPack="com.company.js.web.screens"
+        xmlns:js="http://schemas.company.com/js/0.1/ui-component.xsd">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <hbox spacing="true">
+            <textField id="messageText"/>
+            <button id="showMessage"
+                    caption="msg://showMessage"
+                    invoke="onShowMessageClick"/>
+            <js:jsComponent id="jsComponent"/>
+        </hbox>
+    </layout>
+</window>
